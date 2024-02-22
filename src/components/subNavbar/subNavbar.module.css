@@ -1,0 +1,50 @@
+.subnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.subnav__link {
+  color: var(--white);
+  font-size: 1.1rem;
+  opacity: 0.5;
+  letter-spacing: 1.93px;
+  padding: 1.7rem 0;
+}
+
+.subnav__link.active {
+  border-bottom: 2px solid var(--venus);
+  opacity: 1;
+}
+
+.buttonLinks {
+  display: block;
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: 1.1rem 2rem;
+  border: 1px solid var(--light-grey);
+  margin-bottom: 1.6rem;
+  transition: background-color 0.2s;
+}
+
+.buttonLinks:hover {
+  background-color: var(--light-grey);
+}
+
+.buttonLinks.buttonLinksActive {
+  background-color: var(--venus);
+  border: none;
+}
+
+.nav_num {
+  opacity: 0.5;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .buttonLinks {
+    font-size: 1.5rem;
+    initial-letter: 2.57rem;
+  }
+}

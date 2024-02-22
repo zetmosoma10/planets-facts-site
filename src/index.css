@@ -30,6 +30,8 @@ body {
   font-family: "League Spartan", sans-serif;
   color: var(--white);
   background-color: var(--bg-color);
+  background-image: url("assets/background-stars.svg");
+  font-size: 1.6rem;
 }
 
 a {
@@ -37,6 +39,7 @@ a {
   font-family: inherit;
   font-weight: bold;
   letter-spacing: 1.93px;
+  text-transform: uppercase;
 }
 
 h1,

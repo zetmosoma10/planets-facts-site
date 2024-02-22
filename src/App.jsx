@@ -1,10 +1,10 @@
-import { Feature } from "./components/index";
+import { Feature, SubNavbar, Navbar } from "./components/index";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Feature />
+      <Navbar />
     </>
   );
 }

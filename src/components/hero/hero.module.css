@@ -1,18 +1,31 @@
 .grid {
   display: grid;
+  row-gap: 3rem;
 }
 
 .hero__nav {
+  margin-bottom: 5rem;
 }
 .hero__image {
+  justify-self: center;
 }
 .hero__text {
+  text-align: center;
 }
-.hero__feature {
+
+.hero__text h1 {
+  margin-bottom: 1.6rem;
+}
+
+.hero__text p {
+  font-size: 1.1;
+  font-weight: 300;
+  line-height: 22px;
 }
 
 @media (min-width: 768px) {
   .grid_tablet {
+    column-gap: 6.8rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "earth earth"
@@ -22,26 +35,51 @@
 
   .hero__nav {
     grid-area: nav;
+    margin: 0;
+    align-self: end;
   }
 
   .hero__image {
     grid-area: earth;
+    margin-bottom: 8.5rem;
   }
 
   .hero__feature {
     grid-area: feature;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-top: 0.7rem;
   }
 
   .hero__text {
     grid-area: text;
+    text-align: left;
+  }
+
+  .hero__text h1 {
+    margin-bottom: 2.4rem;
   }
 }
 
 @media (min-width: 1024px) {
   .grid_tablet {
+    row-gap: 4rem;
+    column-gap: 24rem;
     grid-template-areas:
       "earth text"
       "earth nav"
       "feature feature";
+  }
+
+  .hero__image {
+    margin-bottom: 0;
+    align-self: center;
+    justify-self: right;
+  }
+
+  .hero__feature {
+    margin-top: 3rem;
+    gap: 3rem;
   }
 }

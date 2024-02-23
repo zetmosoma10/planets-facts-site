@@ -19,7 +19,7 @@ const links = (
 );
 
 const buttonLinks = (
-  <>
+  <div className={subnavStyles.buttonLink_container}>
     <a href="#" className={subnavStyles.buttonLinks}>
       <span className={subnavStyles.nav_num}>01</span> overview
     </a>
@@ -32,11 +32,16 @@ const buttonLinks = (
     <a href="#" className={subnavStyles.buttonLinks}>
       <span className={subnavStyles.nav_num}>02</span> Surface Geology
     </a>
-  </>
+  </div>
 );
 
 function SubNavbar() {
-  return <nav>{buttonLinks}</nav>;
+  return (
+    <nav>
+      {buttonLinks}
+      {links}
+    </nav>
+  );
 }
 
 export default SubNavbar;

@@ -1,41 +1,45 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import navStyles from "./mainNav.module.css";
+import { NavLink } from "react-router-dom";
+import { planetsContext } from "../../pages/layout/Layout";
 
+// const planets = [
+//   {
+//     path: "#",
+//     name: "mercury",
+//   },
+//   {
+//     path: "#",
+//     name: "venus",
+//   },
+//   {
+//     path: "#",
+//     name: "earth",
+//   },
+//   {
+//     path: "#",
+//     name: "mars",
+//   },
+//   {
+//     path: "#",
+//     name: "jupiter",
+//   },
+//   {
+//     path: "#",
+//     name: "saturn",
+//   },
+//   {
+//     path: "#",
+//     name: "uranus",
+//   },
+//   {
+//     path: "#",
+//     name: "neptune",
+//   },
+// ];
 function Navbar() {
-  const planets = [
-    {
-      path: "#",
-      name: "mercury",
-    },
-    {
-      path: "#",
-      name: "venus",
-    },
-    {
-      path: "#",
-      name: "earth",
-    },
-    {
-      path: "#",
-      name: "mars",
-    },
-    {
-      path: "#",
-      name: "jupiter",
-    },
-    {
-      path: "#",
-      name: "saturn",
-    },
-    {
-      path: "#",
-      name: "uranus",
-    },
-    {
-      path: "#",
-      name: "neptune",
-    },
-  ];
+  const planetsData = useContext(planetsContext);
+  console.log(planetsData);
 
   const [toggler, setToggler] = useState(true);
 
@@ -55,9 +59,9 @@ function Navbar() {
           src="assets/icon-hamburger.svg"
         />
         <ul className={navStyles.nav_list_items}>
-          {planets.map((planet) => (
+          {planetsData.map((planet) => (
             <li className={navStyles.nav_item} key={planet.name}>
-              <a href={planet.path}>{planet.name}</a>
+              <NavLink to={`${planet.name}`}>{planet.name}</NavLink>
             </li>
           ))}
         </ul>
@@ -68,11 +72,11 @@ function Navbar() {
         }`}
       >
         <ul className={`${navStyles.mobile_list_items} container`}>
-          {planets.map((planet) => (
+          {planetsData.map((planet) => (
             <li className={navStyles.mobile_item} key={planet.name}>
               <div className={navStyles.name_wrapper}>
                 <div className={navStyles.color}></div>
-                <a href={planet.path}>{planet.name}</a>
+                <NavLink to={`${planet.name}`}>{planet.name}</NavLink>
               </div>
               <img src="assets/icon-chevron.svg" />
             </li>

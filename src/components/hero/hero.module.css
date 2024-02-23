@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+}
+
+.hero__nav {
+}
+.hero__image {
+}
+.hero__text {
+}
+.hero__feature {
+}
+
+@media (min-width: 768px) {
+  .grid_tablet {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "earth earth"
+      "text nav"
+      "feature feature";
+  }
+
+  .hero__nav {
+    grid-area: nav;
+  }
+
+  .hero__image {
+    grid-area: earth;
+  }
+
+  .hero__feature {
+    grid-area: feature;
+  }
+
+  .hero__text {
+    grid-area: text;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid_tablet {
+    grid-template-areas:
+      "earth text"
+      "earth nav"
+      "feature feature";
+  }
+}

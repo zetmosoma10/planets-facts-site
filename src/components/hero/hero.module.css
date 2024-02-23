@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.hero__feature {
+  margin-bottom: 2.5rem;
+}
+
 .hero__text h1 {
   margin-bottom: 1.6rem;
 }
@@ -26,6 +30,7 @@
 @media (min-width: 768px) {
   .grid_tablet {
     column-gap: 6.8rem;
+    margin-top: 9rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "earth earth"
@@ -41,6 +46,7 @@
 
   .hero__image {
     grid-area: earth;
+
     margin-bottom: 8.5rem;
   }
 
@@ -66,6 +72,7 @@
   .grid_tablet {
     row-gap: 4rem;
     column-gap: 24rem;
+    margin-top: 11rem;
     grid-template-areas:
       "earth text"
       "earth nav"

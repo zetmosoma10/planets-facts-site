@@ -1,12 +1,7 @@
 import featureStyles from "./feature.module.css";
 
-function Feature() {
-  return (
-    <div className={featureStyles.feature}>
-      <p className={featureStyles.feature__text}>ROTATION TIME</p>
-      <h3 className={featureStyles.feature__value}>58.6 days</h3>
-    </div>
-  );
+function Feature({ children }) {
+  return <div className={featureStyles.feature}>{children}</div>;
 }
 
 export default Feature;

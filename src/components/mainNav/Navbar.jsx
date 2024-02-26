@@ -2,44 +2,10 @@ import { useContext, useState } from "react";
 import navStyles from "./mainNav.module.css";
 import { NavLink } from "react-router-dom";
 import { planetsContext } from "../../pages/layout/Layout";
+import ImageHamburger from "/assets/icon-hamburger.svg";
 
-// const planets = [
-//   {
-//     path: "#",
-//     name: "mercury",
-//   },
-//   {
-//     path: "#",
-//     name: "venus",
-//   },
-//   {
-//     path: "#",
-//     name: "earth",
-//   },
-//   {
-//     path: "#",
-//     name: "mars",
-//   },
-//   {
-//     path: "#",
-//     name: "jupiter",
-//   },
-//   {
-//     path: "#",
-//     name: "saturn",
-//   },
-//   {
-//     path: "#",
-//     name: "uranus",
-//   },
-//   {
-//     path: "#",
-//     name: "neptune",
-//   },
-// ];
 function Navbar() {
   const planetsData = useContext(planetsContext);
-  console.log(planetsData);
 
   const [toggler, setToggler] = useState(true);
 
@@ -56,7 +22,7 @@ function Navbar() {
           className={`${navStyles.toggler} ${
             toggler ? null : navStyles.active
           }`}
-          src="assets/icon-hamburger.svg"
+          src={ImageHamburger}
         />
         <ul className={navStyles.nav_list_items}>
           {planetsData.map((planet) => (

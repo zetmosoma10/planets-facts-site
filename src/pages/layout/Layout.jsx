@@ -1,13 +1,14 @@
 import { Outlet } from "react-router";
 import Navbar from "../../components/mainNav/Navbar";
 import planetsData from "../../data.json";
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 const planetsContext = createContext();
 
 function Layout() {
+  const [allPlanets, setAllPlanets] = useState(planetsData);
   return (
-    <planetsContext.Provider value={planetsData}>
+    <planetsContext.Provider value={allPlanets}>
       <Navbar />
       <div className="container">
         <Outlet />

@@ -1,7 +1,11 @@
+export { default as PlanetLayout } from "./planetsDetailsLayout/PlanetLayout";
 export { default as Layout } from "./layout/Layout";
 export { default as Mercury } from "./mercury/Mercury";
 export { default as Venus } from "./venus/Venus";
 export { default as Earth } from "./earth/Earth";
+export { default as EarthOverview } from "./earth/EarthOverview";
+export { default as EarthStructure } from "./earth/EarthStructure";
+export { default as EarthSurface } from "./earth/EarthSurface";
 export { default as Mars } from "./mars/Mars";
 export { default as Neptune } from "./neptune/Neptune";
 export { default as Uranus } from "./uranus/Uranus";

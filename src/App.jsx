@@ -8,6 +8,9 @@ import {
   EarthStructure,
   EarthSurface,
   Mars,
+  MarsOverview,
+  MarsStructure,
+  MarsSurface,
   Jupiter,
   JupiterOverview,
   JupiterStructure,
@@ -32,7 +35,12 @@ function App() {
             <Route path="surface" element={<EarthSurface />} />
           </Route>
 
-          <Route path="Mars" element={<Mars />} />
+          <Route path="Mars" element={<Mars />}>
+            <Route index element={<MarsOverview />} />
+            <Route path="structure" element={<MarsStructure />} />
+            <Route path="surface" element={<MarsSurface />} />
+          </Route>
+
           <Route path="Jupiter" element={<Jupiter />}>
             <Route index element={<JupiterOverview />} />
             <Route path="structure" element={<JupiterStructure />} />

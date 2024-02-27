@@ -9,6 +9,9 @@ import {
   EarthSurface,
   Mars,
   Jupiter,
+  JupiterOverview,
+  JupiterStructure,
+  JupiterSurface,
   Saturn,
   Uranus,
   Neptune,
@@ -28,8 +31,14 @@ function App() {
             <Route path="structure" element={<EarthStructure />} />
             <Route path="surface" element={<EarthSurface />} />
           </Route>
+
           <Route path="Mars" element={<Mars />} />
-          <Route path="Jupiter" element={<Jupiter />} />
+          <Route path="Jupiter" element={<Jupiter />}>
+            <Route index element={<JupiterOverview />} />
+            <Route path="structure" element={<JupiterStructure />} />
+            <Route path="surface" element={<JupiterSurface />} />
+          </Route>
+
           <Route path="Saturn" element={<Saturn />} />
           <Route path="Uranus" element={<Uranus />} />
           <Route path="Neptune" element={<Neptune />} />

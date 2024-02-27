@@ -10,3 +10,6 @@ export { default as Neptune } from "./neptune/Neptune";
 export { default as Uranus } from "./uranus/Uranus";
 export { default as Saturn } from "./saturn/Saturn";
 export { default as Jupiter } from "./jupiter/Jupiter";
+export { default as JupiterOverview } from "./jupiter/JupiterOverview";
+export { default as JupiterStructure } from "./jupiter/JupiterStructure";
+export { default as JupiterSurface } from "./jupiter/JupiterSurface";

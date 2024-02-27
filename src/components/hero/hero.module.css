@@ -27,6 +27,30 @@
   line-height: 22px;
 }
 
+/* PLANET IMG */
+.planetImg {
+  width: 100%;
+}
+
+/* SURFACE PAGE */
+.surfaceImg {
+  position: relative;
+}
+
+.surfaceImg_small {
+  position: absolute;
+  max-width: 168px;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .surfaceImg_small {
+    margin-bottom: 9rem;
+  }
+}
+
 @media (min-width: 768px) {
   .grid_tablet {
     column-gap: 6.8rem;
@@ -86,7 +110,7 @@
   }
 
   .hero__feature {
-    margin-top: 3rem;
+    margin-top: 8rem;
     gap: 3rem;
   }
 }

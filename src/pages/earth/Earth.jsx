@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Outlet, useOutletContext } from "react-router";
+import { Outlet } from "react-router";
 import { planetsContext } from "../layout/Layout";
 import Feature from "../../components/feature/Feature";
 import featureStyles from "../../components/feature/feature.module.css";

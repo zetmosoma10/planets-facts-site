@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Mercury />} />
+          <Route path="Mercury" element={<Mercury />} />
           <Route path="Venus" element={<Venus />} />
           <Route path="Earth" element={<Earth />}>
             <Route index element={<EarthOverview />} />

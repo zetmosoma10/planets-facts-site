@@ -6,6 +6,9 @@ import {
   MercuryStructure,
   MercurySurface,
   Venus,
+  VenusOverview,
+  VenusStructure,
+  VenusSurface,
   Earth,
   EarthOverview,
   EarthStructure,
@@ -45,7 +48,11 @@ function App() {
             <Route path="surface" element={<MercurySurface />} />
           </Route>
 
-          <Route path="Venus" element={<Venus />} />
+          <Route path="Venus" element={<Venus />}>
+            <Route index element={<VenusOverview />} />
+            <Route path="structure" element={<VenusStructure />} />
+            <Route path="surface" element={<VenusSurface />} />
+          </Route>
 
           <Route path="Earth" element={<Earth />}>
             <Route index element={<EarthOverview />} />

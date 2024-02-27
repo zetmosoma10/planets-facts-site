@@ -13,11 +13,6 @@
   padding: 1.7rem 0;
 }
 
-.subnav__link.active {
-  border-bottom: 2px solid var(--venus);
-  opacity: 1;
-}
-
 .buttonLink_container {
   display: flex;
   flex-direction: column;
@@ -35,11 +30,6 @@
 
 .buttonLinks:hover {
   background-color: var(--light-grey);
-}
-
-.buttonLinks.buttonLinksActive {
-  background-color: var(--venus);
-  border: none;
 }
 
 .nav_num {

@@ -3,8 +3,8 @@ import { Outlet } from "react-router";
 import { planetsContext } from "../layout/Layout";
 import Feature from "../../components/feature/Feature";
 import featureStyles from "../../components/feature/feature.module.css";
-import SubNavbar from "../../components/subNavbar/SubNavbar";
 import heroStyles from "../../components/hero/hero.module.css";
+import EarthSubNav from "./EarthSubNav";
 
 function Earth() {
   const [earth, setEarth] = useState(useContext(planetsContext));
@@ -14,7 +14,7 @@ function Earth() {
     <>
       <div className={`${heroStyles.grid} ${heroStyles.grid_tablet}`}>
         <div className={heroStyles.hero__nav}>
-          <SubNavbar />
+          <EarthSubNav />
         </div>
         <Outlet context={earthData} />
         <div className={heroStyles.hero__feature}>

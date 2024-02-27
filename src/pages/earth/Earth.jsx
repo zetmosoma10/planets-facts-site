@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 import { planetsContext } from "../layout/Layout";
 import Feature from "../../components/feature/Feature";
 import featureStyles from "../../components/feature/feature.module.css";
-import heroStyles from "../../components/hero/hero.module.css";
+import layoutStyles from "../layout/layout.module.css";
 import EarthSubNav from "./EarthSubNav";
 
 function Earth() {
@@ -12,12 +12,12 @@ function Earth() {
 
   return (
     <>
-      <div className={`${heroStyles.grid} ${heroStyles.grid_tablet}`}>
-        <div className={heroStyles.hero__nav}>
+      <div className={`${layoutStyles.grid} ${layoutStyles.grid_tablet}`}>
+        <div className={layoutStyles.hero__nav}>
           <EarthSubNav />
         </div>
         <Outlet context={earthData} />
-        <div className={heroStyles.hero__feature}>
+        <div className={layoutStyles.hero__feature}>
           <Feature>
             <p className={featureStyles.feature__text}>ROTATION TIME</p>
             <h3 className={featureStyles.feature__value}>

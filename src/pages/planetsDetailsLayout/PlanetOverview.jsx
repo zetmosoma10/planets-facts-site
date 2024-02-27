@@ -1,15 +1,15 @@
-import heroStyles from "../../components/hero/hero.module.css";
+import layoutStyles from "../layout/layout.module.css";
 
 function PlanetOverview({ planetName }) {
   return (
     <>
-      <div className={heroStyles.hero__image}>
+      <div className={layoutStyles.hero__image}>
         <img
-          className={heroStyles.planetImg}
+          className={layoutStyles.planetImg}
           src={`/${planetName.images.planet}`}
         />
       </div>
-      <div className={heroStyles.hero__text}>
+      <div className={layoutStyles.hero__text}>
         <h1>{planetName.name}</h1>
         <p>{planetName.overview.content}</p>
       </div>

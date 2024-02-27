@@ -1,4 +1,3 @@
-// export { default as PlanetLayout } from "./planetsDetailsLayout/PlanetLayout";
 export { default as Layout } from "./layout/Layout";
 export { default as Mercury } from "./mercury/Mercury";
 export { default as Venus } from "./venus/Venus";

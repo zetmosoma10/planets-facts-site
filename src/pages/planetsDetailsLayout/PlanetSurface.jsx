@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import layoutStyles from "../layout/layout.module.css";
 
 function PlanetSurface({ planetName }) {
@@ -18,6 +19,12 @@ function PlanetSurface({ planetName }) {
       <div className={layoutStyles.hero__text}>
         <h1>{planetName.name}</h1>
         <p>{planetName.geology.content}</p>
+        <p className={layoutStyles.hero__link}>
+          Source :{" "}
+          <Link target="_blank" to={planetName.geology.source}>
+            Wikipedia
+          </Link>
+        </p>
       </div>
     </>
   );

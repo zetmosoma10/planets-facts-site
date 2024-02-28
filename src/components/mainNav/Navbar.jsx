@@ -20,7 +20,6 @@ function Navbar() {
 
   const activeLinks = {
     opacity: "1",
-    borderTop: `2px solid`,
   };
 
   return (

@@ -112,6 +112,7 @@
 @media (min-width: 1024px) {
   .main_nav {
     flex-direction: row;
+    padding-top: 0;
   }
 
   .nav_list_items {
@@ -121,5 +122,11 @@
 
   .nav_list_items a {
     margin-left: 3rem;
+  }
+
+  .logo,
+  .toggler,
+  .nav_list_items a {
+    padding-top: 1.8rem;
   }
 }

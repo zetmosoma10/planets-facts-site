@@ -40,15 +40,10 @@
 .surfaceImg_small {
   position: absolute;
   max-width: 168px;
-  bottom: -25%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@media (max-width: 767px) {
-  .surfaceImg_small {
-    margin-bottom: 9rem;
-  }
+  top: 80%;
+  left: 35%;
+  /* transform: translateX(-50%); */
+  transform: translateY(-50%);
 }
 
 @media (min-width: 768px) {
@@ -110,7 +105,6 @@
   }
 
   .hero__feature {
-    margin-top: 8rem;
     gap: 3rem;
   }
 }

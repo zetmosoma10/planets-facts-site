@@ -6,7 +6,7 @@ function NotFoundPage() {
     <div className={`container ${notFoundPageStyles.notFound}`}>
       <h1>Not Found Page</h1>
       <small className={notFoundPageStyles.small}>Error: 404</small>
-      <Link to="/Mercury" className={notFoundPageStyles.home_link}>
+      <Link to="/" className={notFoundPageStyles.home_link}>
         Back to home
       </Link>
     </div>

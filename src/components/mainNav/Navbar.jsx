@@ -18,6 +18,11 @@ function Navbar() {
     setToggler(true);
   };
 
+  const activeLinks = {
+    opacity: "1",
+    borderTop: `2px solid`,
+  };
+
   return (
     <header className="nav-container">
       <nav className={navStyles.main_nav}>
@@ -32,7 +37,12 @@ function Navbar() {
         <ul className={navStyles.nav_list_items}>
           {planetsData.map((planet) => (
             <li className={navStyles.nav_item} key={planet.name}>
-              <NavLink to={`${planet.name}`}>{planet.name}</NavLink>
+              <NavLink
+                style={({ isActive }) => (isActive ? activeLinks : null)}
+                to={`${planet.name}`}
+              >
+                {planet.name}
+              </NavLink>
             </li>
           ))}
         </ul>

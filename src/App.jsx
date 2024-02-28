@@ -41,6 +41,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Mercury />}>
+            <Route index element={<MercuryOverview />} />
+            <Route path="structure" element={<MercuryStructure />} />
+            <Route path="surface" element={<MercurySurface />} />
+          </Route>
+
           <Route path="Mercury" element={<Mercury />}>
             <Route index element={<MercuryOverview />} />
             <Route path="structure" element={<MercuryStructure />} />

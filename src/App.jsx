@@ -33,9 +33,8 @@ import {
   NeptuneOverview,
   NeptuneStructure,
   NeptuneSurface,
+  NotFoundPage,
 } from "./pages/index";
-
-import "./App.css";
 
 function App() {
   return (
@@ -90,6 +89,7 @@ function App() {
             <Route path="surface" element={<NeptuneSurface />} />
           </Route>
         </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

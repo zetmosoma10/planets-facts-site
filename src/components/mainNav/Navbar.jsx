@@ -46,7 +46,10 @@ function Navbar() {
           {planetsData.map((planet) => (
             <li className={navStyles.mobile_item} key={planet.name}>
               <div onClick={removeSidebar} className={navStyles.name_wrapper}>
-                <div className={navStyles.color}></div>
+                <div
+                  style={{ backgroundColor: planet.color }}
+                  className={navStyles.shape}
+                ></div>
                 <NavLink to={`${planet.name}`}>{planet.name}</NavLink>
               </div>
               <img src={ImageChevron} />

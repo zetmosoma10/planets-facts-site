@@ -34,6 +34,18 @@ body {
   font-size: 1.6rem;
 }
 
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.nav-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%;
+}
+
 a {
   text-decoration: none;
   font-family: inherit;
